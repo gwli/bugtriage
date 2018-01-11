@@ -1,0 +1,3 @@
+nltk
+Gensim
+scikit-learn
