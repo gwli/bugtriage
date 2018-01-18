@@ -75,7 +75,7 @@ for item in data:
 
 # Learn the word2vec model and extract vocabulary
 wordvec_model = Word2Vec(all_data, min_count=min_word_frequency_word2vec, size=embed_size_word2vec, window=context_window_word2vec)
-vocabulary = wordvec_model.vocab
+vocabulary = wordvec_model.wv.vocab
 vocab_size = len(vocabulary)
 
 #========================================================================================
